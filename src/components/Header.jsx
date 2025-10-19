@@ -1,0 +1,12 @@
+function Header(){
+
+    return(
+    <>
+        <div className="flex justify-center w-full h-28 bg-indigo-500">
+            <img src="/imgs/logo.png" alt="Logo StormSafe" className="w-1/9 object-cover" />
+        </div>
+    </>
+    )
+}
+
+export default Header
