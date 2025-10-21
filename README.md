@@ -1,16 +1,20 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Stormsafe
+🚧 Projeto em desenvolvimento 🚧
+###
+Este aplicativo combina notícias em tempo real com previsões e dados meteorológicos precisos. O objetivo é fornecer informações cruciais sobre o que está acontecendo no mundo e como estará o tempo em um só lugar.
+###
+# Funcionalidades Pretendidas
+•	Exibição de notícias de diferentes fontes.
+•	Previsão do tempo detalhada para diversas regiões.
+•	Feed integrado com informações locais.
+•	Interface responsiva para uso em web e dispositivos móveis.
+###
+# Status do Projeto
+O projeto ainda está em fase inicial e diversas funcionalidades estão sendo planejadas ou implementadas atualmente. É normal encontrar bugs ou instabilidades.
+###
+# Tecnologias Utilizadas
+•	React com Vite para desenvolvimento rápido e eficiente.
+•	Integração futura com APIs de notícias e meteorologia.
+###
+# Como contribuir
+Pull requests, sugestões e testes são muito bem-vindos! Se quiser colaborar, crie uma issue.
