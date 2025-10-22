@@ -24,12 +24,12 @@ function Climate(){
            const res = await fetch(`https://stormsafe-api.onrender.com/climate/${lat}/${lon}`)
 
            const data = await res.json()
-           console.log(data)
+           return data
         } catch(err){
             console.error('Erro ao buscar cidade.', err)
         }
         }
-        
+
         if(lat !== null && lon !== null){
             searchClimate()
         }
