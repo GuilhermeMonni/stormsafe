@@ -19,12 +19,7 @@ function Climate(){
     }, [])
 
     useEffect(() => { //search infos
-        if(lat !== null && lon !== null){
-            searchClimate()
-        }
-    }, [lat, lon])
-
-    async function searchClimate() {
+        async function searchClimate() {
         try{ //search infos
            const res = await fetch(`https://stormsafe-api.onrender.com/climate/${lat}/${lon}`)
 
@@ -33,7 +28,12 @@ function Climate(){
         } catch(err){
             console.error('Erro ao buscar cidade.', err)
         }
-    }
+        }
+        
+        if(lat !== null && lon !== null){
+            searchClimate()
+        }
+    }, [lat, lon])
 
     return(
     <>
