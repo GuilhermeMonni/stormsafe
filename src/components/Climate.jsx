@@ -6,8 +6,8 @@ function Climate(){
     let [climateData, setClimateData] = useState(null) //infos climate
     let [weatherData, setWeatherData] = useState({
         condition: '',
-        temperature: 0, 
-        humidity: 0
+        temperature: '', 
+        humidity: ''
     })
 
     useEffect(() => { //set lat e lon user
@@ -33,7 +33,6 @@ function Climate(){
            const res = await fetch(`https://stormsafe-api.onrender.com/climate/${lat}/${lon}`) //url api
 
            const data = await res.json()
-           console.log(data)
            setClimateData(data) //set data api
         } catch(err){
             console.error('Erro ao buscar cidade.', err)
@@ -45,13 +44,13 @@ function Climate(){
         }
     }, [lat, lon])
 
-    useEffect(() => {
+    useEffect(() => { //list infos climate
         if(climateData){
             setWeatherData({
                 condition: climateData.condition,
                 text: climateData.text,
                 temp: 'Temperatura: ' + parseInt(climateData.temp) + '°C',
-                humidity: 'Umidade: ' + climateData.humidity
+                humidity: 'Umidade: ' + parseInt(climateData.humidity)
             })
         }
     }, [climateData])
@@ -59,7 +58,7 @@ function Climate(){
     return(
     <>
         <div className="w-1/5 h-56 bg-indigo-300 rounded-lg">
-            <h2 key="title-city">{climateData ? climateData.city : 'Carregando...'}</h2>
+            <h2 key="title-city" className="font-mono">{climateData ? climateData.city : 'Carregando...'}</h2>
             <ul>
                 <li key="condition">{weatherData.text}</li>
                 <li key="temperature">{weatherData.temp}</li>
