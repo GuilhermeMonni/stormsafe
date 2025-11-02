@@ -68,7 +68,7 @@ function Alerts(){
                     </a>
                     </div>
                 </article>
-                ))}
+            ))}
         </>
     )
 }
