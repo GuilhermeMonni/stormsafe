@@ -35,7 +35,6 @@ function Alerts(){
                     key={alert.id}
                     className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-blue-200/50 hover:scale-[1.02]"
                 >
-                    {/* Imagem */}
                     <div className="relative h-48 overflow-hidden">
                     <img 
                         src={alert.img} 
@@ -45,19 +44,15 @@ function Alerts(){
                     <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 to-transparent" />
                     </div>
 
-                    {/* Conteúdo */}
                     <div className="p-6 space-y-4">
-                    {/* Título */}
                     <h2 className="text-xl font-bold text-blue-900 line-clamp-2 leading-tight">
                         {alert.title}
                     </h2>
 
-                    {/* Descrição */}
                     <p className="text-blue-700 text-sm leading-relaxed line-clamp-3">
                         {alert.description}
                     </p>
 
-                    {/* Link */}
                     <a 
                         href={alert.link}
                         target="_blank"
