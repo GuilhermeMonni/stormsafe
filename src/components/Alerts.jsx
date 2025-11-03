@@ -33,7 +33,7 @@ function Alerts(){
             {dataAlerts.map((alert) => (
                 <article 
                     key={alert.id}
-                    className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-blue-200/50 hover:scale-[1.02]"
+                    className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-blue-200/50 hover:scale-[1.01]"
                 >
                     <div className="relative h-48 overflow-hidden">
                     <img 

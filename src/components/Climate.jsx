@@ -57,7 +57,7 @@ function Climate(){
 
     return(
     <>
-        <div className="w-1/5 h-56 bg-indigo-300 rounded-lg">
+        <div className="h-56 bg-indigo-300 rounded-lg">
             <h2 key="title-city" className="font-mono">{climateData ? climateData.city : 'Carregando...'}</h2>
             <ul>
                 <li key="condition">{weatherData.text}</li>
