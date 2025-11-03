@@ -1,4 +1,4 @@
-import { useState, useEffect, createElement } from "react"
+import { useState, useEffect } from "react"
 
 function Alerts(){
     let [dataAlerts, setDataAlerts] = useState({
