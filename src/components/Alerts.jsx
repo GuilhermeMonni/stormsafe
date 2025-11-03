@@ -16,7 +16,6 @@ function Alerts(){
                 const response = await fetch('https://stormsafe-api.onrender.com/alerts')
 
                 const dataResponse = await response.json()
-                console.log(dataResponse.dataResponse)
                 setDataAlerts(dataResponse.dataResponse)
             }finally{
                 setLoading(false)
